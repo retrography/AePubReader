@@ -13,6 +13,6 @@
     EPubViewController* epubViewController;
 }
 
-@property(nonatomic, assign) EPubViewController* epubViewController;
+@property(nonatomic, assign) id epubViewController;
 
 @end

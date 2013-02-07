@@ -48,7 +48,7 @@
 }
 
 - (void) searchString:(NSString*)query{
-    self.results = [[NSMutableArray alloc] init];
+    self.results = [NSMutableArray array];
     [resultsTableView reloadData];
     self.currentQuery=query;
     

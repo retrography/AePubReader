@@ -1,0 +1,5 @@
+Added Support for iBook like page turning using UIPageViewController, thus limiting it to iOS5+ only.
+
+Not fully tested and optimised, use at your own liability.
+
+See: https://github.com/fedefrappi/AePubReader for original work 

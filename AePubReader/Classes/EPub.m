@@ -84,7 +84,7 @@
 - (NSString*) parseManifestFile{
 	NSString* manifestFilePath = [NSString stringWithFormat:@"%@/UnzippedEpub/META-INF/container.xml", [self applicationDocumentsDirectory]];
 //	NSLog(@"%@", manifestFilePath);
-	NSFileManager *fileManager = [[NSFileManager alloc] init];
+	NSFileManager *fileManager = [[[NSFileManager alloc] init] autorelease];
 	if ([fileManager fileExistsAtPath:manifestFilePath]) {
 		//		NSLog(@"Valid epub");
 		CXMLDocument* manifestFile = [[[CXMLDocument alloc] initWithContentsOfURL:[NSURL fileURLWithPath:manifestFilePath] options:0 error:nil] autorelease];

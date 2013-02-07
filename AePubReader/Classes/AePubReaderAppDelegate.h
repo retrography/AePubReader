@@ -20,6 +20,6 @@
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet EPubViewController *detailViewController;
+@property (nonatomic, retain) IBOutlet id detailViewController;
 
 @end

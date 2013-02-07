@@ -10,6 +10,7 @@
 
 
 #import "EPubViewController.h"
+#import "ARePubViewController.h"
 
 
 @implementation AePubReaderAppDelegate
@@ -24,6 +25,7 @@
     
     // Override point for customization after app launch.
     
+    self.detailViewController=[[[ARePubViewController alloc] initWithNibName:@"ARePubViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.detailViewController;
     [self.window makeKeyAndVisible];
     [detailViewController loadEpub:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"vhugo" ofType:@"epub"]]];

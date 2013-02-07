@@ -47,7 +47,7 @@
     totalPagesCount = 0;
 	searching = NO;
     epubLoaded = NO;
-    self.loadedEpub = [[EPub alloc] initWithEPubPath:[epubURL path]];
+    self.loadedEpub = [[[EPub alloc] initWithEPubPath:[epubURL path]] autorelease];
     epubLoaded = YES;
     NSLog(@"loadEpub");
 	[self updatePagination];

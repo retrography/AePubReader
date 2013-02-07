@@ -19,7 +19,7 @@
 }
 
 @property (nonatomic, retain) IBOutlet UITableView* resultsTableView;
-@property (nonatomic, assign) EPubViewController* epubViewController;
+@property (nonatomic, assign) id epubViewController;
 @property (nonatomic, retain) NSMutableArray* results;
 @property (nonatomic, retain) NSString* currentQuery;
 
