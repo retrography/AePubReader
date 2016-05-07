@@ -65,7 +65,7 @@
 														 delegate:self
 												cancelButtonTitle:@"OK"
 												otherButtonTitles:nil];
-			[alert show];
+            [alert show];
 			[alert release];
 			alert=nil;
 		}
@@ -119,7 +119,7 @@
         }
 	}
 	
-    int lastSlash = [opfPath rangeOfString:@"/" options:NSBackwardsSearch].location;
+    int lastSlash = (int) [opfPath rangeOfString:@"/" options:NSBackwardsSearch].location;
 	NSString* ebookBasePath = [opfPath substringToIndex:(lastSlash +1)];
     CXMLDocument* ncxToc = [[CXMLDocument alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[NSString stringWithFormat:@"%@%@", ebookBasePath, ncxFileName]] options:0 error:nil];
     NSMutableDictionary* titleDictionary = [[NSMutableDictionary alloc] init];

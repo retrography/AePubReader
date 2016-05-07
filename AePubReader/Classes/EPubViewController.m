@@ -213,7 +213,7 @@
 		pageSum+=[[loadedEpub.spineArray objectAtIndex:chapterIndex] pageCount];
 //		NSLog(@"Chapter %d, targetPage: %d, pageSum: %d, pageIndex: %d", chapterIndex, targetPage, pageSum, (pageSum-targetPage));
 		if(pageSum>=targetPage){
-			pageIndex = [[loadedEpub.spineArray objectAtIndex:chapterIndex] pageCount] - 1 - pageSum + targetPage;
+			pageIndex = [[loadedEpub.spineArray objectAtIndex:chapterIndex] pageCount] - 1 - pageSum + (int) targetPage;
 			break;
 		}
 	}

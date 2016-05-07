@@ -100,7 +100,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     cell.textLabel.numberOfLines = 2;
-    cell.textLabel.lineBreakMode = UILineBreakModeMiddleTruncation;
+    cell.textLabel.lineBreakMode = (int) NSLineBreakByTruncatingMiddle;
     cell.textLabel.adjustsFontSizeToFitWidth = YES;
     cell.textLabel.text = [[epubViewController.loadedEpub.spineArray objectAtIndex:[indexPath row]] title];
     return cell;
@@ -113,7 +113,7 @@
 {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [epubViewController loadSpine:[indexPath row] atPageIndex:0 highlightSearchResult:nil];
+    [epubViewController loadSpine:(int)[indexPath row] atPageIndex:0 highlightSearchResult:nil];
 }
 
 @end

@@ -10,6 +10,7 @@
 #import "ARePubPageContentViewController.h"
 #import "ChapterListViewController.h"
 #import "SearchResultsViewController.h"
+#import "CameraViewController.h"
 #import "SearchResult.h"
 
 #import "UIWebView+SearchWebView.h"
@@ -225,11 +226,11 @@
 	int pageSum = 0;
 	int chapterIndex = 0;
 	int pageIndex = 0;
-	for(chapterIndex=0; chapterIndex<[self.loadedEpub.spineArray count]; chapterIndex++){
-		pageSum+=[[self.loadedEpub.spineArray objectAtIndex:chapterIndex] pageCount];
+	for(chapterIndex = 0; chapterIndex<[self.loadedEpub.spineArray count]; chapterIndex++){
+		pageSum += [[self.loadedEpub.spineArray objectAtIndex:chapterIndex] pageCount];
         //		NSLog(@"Chapter %d, targetPage: %d, pageSum: %d, pageIndex: %d", chapterIndex, targetPage, pageSum, (pageSum-targetPage));
 		if(pageSum>=targetPage){
-			pageIndex = [[self.loadedEpub.spineArray objectAtIndex:chapterIndex] pageCount] - 1 - pageSum + targetPage;
+			pageIndex = (int)[[self.loadedEpub.spineArray objectAtIndex:chapterIndex] pageCount] - 1 - pageSum + targetPage;
 			break;
 		}
 	}
@@ -249,6 +250,15 @@
 	}else{
 		[chaptersPopover presentPopoverFromBarButtonItem:self.chapterListButton permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 	}
+}
+
+- (IBAction) takePhotoVSearch:(id)sender{
+    //if you are using xibs use this line
+    CameraViewController* cameraView = [[CameraViewController alloc] initWithNibName:@"CameraViewController" bundle:[NSBundle mainBundle]];
+
+    //to present the controller modally use this
+    [self presentViewController:cameraView animated:NO completion:nil];
+
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{

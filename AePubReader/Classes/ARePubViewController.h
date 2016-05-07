@@ -23,6 +23,7 @@
 //IB properties
 @property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *chapterListButton;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *visualSearchButton;
 
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *decTextSizeButton;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *incTextSizeButton;

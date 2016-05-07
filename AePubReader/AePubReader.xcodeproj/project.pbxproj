@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10AF84B31CDEA73800908BC8 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF84B11CDEA73800908BC8 /* CameraViewController.m */; };
+		10AF84B41CDEA73800908BC8 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10AF84B21CDEA73800908BC8 /* CameraViewController.xib */; };
 		1D3623260D0F684500981E51 /* AePubReaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AePubReaderAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -18,7 +20,7 @@
 		22F9E28F16C45263009069E5 /* Caliphate.epub in Resources */ = {isa = PBXBuildFile; fileRef = 22F9E28E16C45263009069E5 /* Caliphate.epub */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
-		CA7E023515E388F3001F520B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7E023415E388F3001F520B /* libz.dylib */; };
+		CA7E023515E388F3001F520B /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7E023415E388F3001F520B /* libz.1.tbd */; };
 		FA11955A13BA921100025A2B /* UIWebView+SearchWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA11955913BA921100025A2B /* UIWebView+SearchWebView.m */; };
 		FA11956013BA924400025A2B /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = FA11955E13BA924400025A2B /* GTMNSString+HTML.m */; };
 		FA11956113BA924400025A2B /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = FA11955F13BA924400025A2B /* NSString+HTML.m */; };
@@ -57,6 +59,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10AF84B01CDEA73800908BC8 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		10AF84B11CDEA73800908BC8 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		10AF84B21CDEA73800908BC8 /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CameraViewController.xib; path = Classes/CameraViewController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AePubReaderAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AePubReaderAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AePubReaderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AePubReaderAppDelegate.m; sourceTree = "<group>"; wrapsLines = 0; };
@@ -74,7 +79,7 @@
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* AePubReader-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AePubReader-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		CA7E023415E388F3001F520B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CA7E023415E388F3001F520B /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = ../iPhoneOS.sdk/usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
 		FA11955813BA921100025A2B /* UIWebView+SearchWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+SearchWebView.h"; sourceTree = "<group>"; };
 		FA11955913BA921100025A2B /* UIWebView+SearchWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+SearchWebView.m"; sourceTree = "<group>"; };
 		FA11955B13BA924400025A2B /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
@@ -147,7 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7E023515E388F3001F520B /* libz.dylib in Frameworks */,
+				CA7E023515E388F3001F520B /* libz.1.tbd in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
@@ -168,6 +173,8 @@
 				FA307A391371E2B000959622 /* ChapterListViewController.h */,
 				FA307A3A1371E2B000959622 /* ChapterListViewController.m */,
 				FAF45877134B1B6C00D4C0F9 /* EPub.h */,
+				10AF84B01CDEA73800908BC8 /* CameraViewController.h */,
+				10AF84B11CDEA73800908BC8 /* CameraViewController.m */,
 				FAF45878134B1B6C00D4C0F9 /* EPub.m */,
 				FA11956213BA92CD00025A2B /* EPubViewController.h */,
 				FA11956313BA92CD00025A2B /* EPubViewController.m */,
@@ -240,6 +247,7 @@
 				FA881E4D1372CA9200FBD25F /* yellowslide.png */,
 				FAFA8E85134A0603000291E2 /* vhugo.epub */,
 				FA11956513BA93F100025A2B /* EPubView.xib */,
+				10AF84B21CDEA73800908BC8 /* CameraViewController.xib */,
 				FA881E581372E96000FBD25F /* SearchResultsViewController.xib */,
 				FA307A3B1371E2B000959622 /* ChapterListViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
@@ -251,7 +259,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CA7E023415E388F3001F520B /* libz.dylib */,
+				CA7E023415E388F3001F520B /* libz.1.tbd */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
@@ -369,8 +377,16 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 5Z63H7L2JF;
+					};
+				};
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AePubReader" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -402,6 +418,7 @@
 				FA881E4F1372CA9200FBD25F /* slider_ball.png in Resources */,
 				FA881E501372CA9200FBD25F /* yellowslide.png in Resources */,
 				FA881E5A1372E96000FBD25F /* SearchResultsViewController.xib in Resources */,
+				10AF84B41CDEA73800908BC8 /* CameraViewController.xib in Resources */,
 				FA11956613BA93F100025A2B /* EPubView.xib in Resources */,
 				2261145E16C29F5500E66527 /* ARePubPageContentViewController.xib in Resources */,
 				22F9E28D16C44CCD009069E5 /* ARePubViewController.xib in Resources */,
@@ -441,6 +458,7 @@
 				FA307A3C1371E2B000959622 /* ChapterListViewController.m in Sources */,
 				FA881E591372E96000FBD25F /* SearchResultsViewController.m in Sources */,
 				FA4FBE561372F6A400C4E728 /* SearchResult.m in Sources */,
+				10AF84B31CDEA73800908BC8 /* CameraViewController.m in Sources */,
 				FA11955A13BA921100025A2B /* UIWebView+SearchWebView.m in Sources */,
 				FA11956013BA924400025A2B /* GTMNSString+HTML.m in Sources */,
 				FA11956113BA924400025A2B /* NSString+HTML.m in Sources */,
@@ -457,6 +475,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,6 +487,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AePubReader_Prefix.pch;
 				INFOPLIST_FILE = "AePubReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -476,7 +497,9 @@
 					"-ObjC",
 					"-lstdc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.zargar.AePubReader;
 				PRODUCT_NAME = AePubReader;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -484,6 +507,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,6 +517,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AePubReader_Prefix.pch;
 				INFOPLIST_FILE = "AePubReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -501,7 +527,9 @@
 					"-ObjC",
 					"-lstdc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.zargar.AePubReader;
 				PRODUCT_NAME = AePubReader;
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -509,13 +537,14 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-lxml2";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
@@ -526,13 +555,12 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-lxml2";
 				PREBINDING = NO;
